@@ -12,3 +12,4 @@ $detail->motor = "V12";
 echo $detail->getInfo();
 
 ?>
+<!-- opdracht 2 van jarmo 1wdv1 -->
