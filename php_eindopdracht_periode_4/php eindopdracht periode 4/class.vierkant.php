@@ -12,14 +12,14 @@ class Vierkant extends Figuur
         $this->setX($Ix);
         $this->setY($Iy);
     }
-    public function setX($Ix) {
+    public function getX($Ix) {
         if(!is_double($Ix)) {
             die('Ix is geen int');
       }
         $this->x= $Ix;
     }
     public function setY($Iy) {
-        if(!is_double($Iy)&& !is_int($Iy)) {
+        if(!is_double($Iy)&& !is_float($Iy)) {
             die ('Iy is geen int');
         }
         $this->y=$Iy;

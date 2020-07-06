@@ -15,13 +15,13 @@ abstract class Figuur {
         
     }   
     public function setX($Ix) {
-        if(!is_int($Ix)&& !is_int($Ix)) {
+        if(!is_float($Ix)&& !is_float($Ix)) {
             die('Ix is geen int');
       }
         $this->x= $Ix;
     }
     public function setY($Iy) {
-        if(!is_int($Iy)&& !is_int($Iy)) {
+        if(!is_float($Iy)&& !is_float($Iy)) {
             die ('Iy is geen int');
         }
         $this->y=$Iy;

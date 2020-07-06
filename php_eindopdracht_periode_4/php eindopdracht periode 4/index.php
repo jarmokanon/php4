@@ -2,13 +2,17 @@
 include 'class.figuur.php';
 include 'class.cilinder.php';
 include 'class.vierkant.php';
+include 'class.driehoek.php';
 
 // verplicht
-$cilinder = new Cilinder(10.3,43);
+$cilinder = new Cilinder(10,43);
 echo " het oppervlakte van de (verplichte) cilinder is: ". $cilinder->berekenoppervlakte(). " cm2 <br>";
 // verplicht
 $vierkant = new Vierkant(5,5);
 echo " het oppervlakte van de (verplichte) vierkant is: ". $vierkant->berekenoppervlakte(). " cm2 <br>";
+//extra bereken driehoek
+$driehoek = new Driehoek(10,5);
+echo " het oppervlakte van de driehoek is: ". $driehoek->berekenoppervlakte(). " cm2 <br>";
 
 $vierkant = new Vierkant(45,90);
 echo " het oppervlakte van mijn bureau is ong. ". $vierkant->berekenoppervlakte(). " cm2 <br>";

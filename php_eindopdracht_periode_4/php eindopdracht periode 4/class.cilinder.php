@@ -8,34 +8,18 @@ class Cilinder extends Figuur {
     public function __construct( float $Ih,  float $Ir)
     {
         parent::__construct($Ih, $Ir);
-        $this->seth($Ih);
-        $this->setR($Ir);
     }
    
 
-    public function getH($Ih) {
-        $this->setH($Ih);
-        echo $Ih;
+    public function getH() {
+        return $this->x;
     }
-    public function getR($Ir){
-        $this->setR($Ir);
-    }
-
-    public function setH($Ih) {
-        if(!is_int($Ih)) {
-            die('dit gaat niet');
-      }
-      $this->h= $Ih;
-    }
-    public function setR($Ir) {
-        if(!is_int($Ir)) {
-            die('dit gaat niet');
-      }
-      $this->r= $Ir;
+    public function getR(){
+        return $this->y;
     }
     public function berekenoppervlakte() {
-        $opp = (2 * Figuur::$PI * $this->r * $this->r) + (2 * Figuur::$PI * $this->r * $this->h);
-        
+        $opp = (2 * Figuur::$PI * $this->getR() * $this->getR()) + (2 * Figuur::$PI * $this->getR() * $this->getH());
+        // in de feedback video deed u getR en getH bij de bovenstaande regel omdraaien, maar ik denk dat deze beter is??????
         return $opp;
     }
 
